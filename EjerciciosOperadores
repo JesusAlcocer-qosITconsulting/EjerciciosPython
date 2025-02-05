@@ -1,0 +1,49 @@
+#Actividad 1
+
+
+num1 = float(input("Introduce el primer número: "))
+num2 = float(input("Introduce el segundo número: "))
+
+
+son_iguales = num1 == num2
+son_diferentes = num1 != num2
+es_mayor_que = num1 > num2
+es_menor_que = num2 > num1
+
+
+print("¿Los dos números son iguales?", son_iguales)
+print("¿Los dos números son diferentes?", son_diferentes)
+print("¿El primer número es mayor que el segundo?", es_mayor_que)
+print("¿El segundo número es mayor que el primero?", es_menor_que)
+
+
+#Actividad 2
+
+cadena = input("Introduce una cadena: ")
+
+
+es_longitud_valida = len(cadena) >= 3 and len(cadena) < 10
+
+
+print("La cadena tiene una longitud mayor o igual a 3 y menor que 10:", es_longitud_valida)
+
+
+#Actividad 3
+
+numero_magico = 12345679
+
+
+numero_usuario = int(input("Introduce un número entre 1 y 9: "))
+
+
+if 1 <= numero_usuario <= 9:
+   
+    numero_usuario *= 9
+    
+    
+    numero_magico *= numero_usuario
+    
+   
+    print("El valor de numero_magico es:", numero_magico)
+else:
+    print("Por favor, ingresa un número entre 1 y 9.")
